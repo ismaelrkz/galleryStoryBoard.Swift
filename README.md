@@ -3,6 +3,7 @@ em edicão...
 # Gallery StoryBoard 
 
 ## Sobre o projeto 
+descrição e objetivo do projeto...
 
 ## Layout App
 <p float="left">
@@ -17,7 +18,11 @@ em edicão...
 
 ## Tecnologias utilizadas
 
+- Swift
+- UIKit
+
 ## Estrutura do projeto
+sobre o seu desenvolvimento...
 
 ## Autor
 
