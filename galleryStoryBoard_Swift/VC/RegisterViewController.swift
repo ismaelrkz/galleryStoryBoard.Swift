@@ -12,7 +12,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // local do código referente ao registro
+        
     }
     
 }
