@@ -15,10 +15,4 @@ class RegisterViewController: UIViewController {
         // local do código referente ao registro
     }
     
-
-    
-    
-
-    
-
 }
