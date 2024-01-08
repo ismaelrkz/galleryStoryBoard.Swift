@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            // novo teste
+        view.backgroundColor = UIColor.blue
         
     }
 
