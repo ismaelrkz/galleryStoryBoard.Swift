@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0490A82B4CBE22002D395B /* TabBarViewController.swift */; };
+		7E0490AE2B4CBE72002D395B /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */; };
 		7ED79F2B2B48153200149269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2A2B48153200149269 /* AppDelegate.swift */; };
 		7ED79F2D2B48153200149269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2C2B48153200149269 /* SceneDelegate.swift */; };
 		7ED79F2F2B48153200149269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2E2B48153200149269 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E0490A82B4CBE22002D395B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
 		7ED79F272B48153200149269 /* galleryStoryBoard_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galleryStoryBoard_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED79F2A2B48153200149269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ED79F2C2B48153200149269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			children = (
 				7ED79F3F2B48192900149269 /* RegisterViewController.swift */,
 				7ED79F412B48193700149269 /* RegisterViewController.storyboard */,
+				7E0490A82B4CBE22002D395B /* TabBarViewController.swift */,
+				7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 				7ED79F422B48193700149269 /* RegisterViewController.storyboard in Resources */,
 				7ED79F372B48153400149269 /* LaunchScreen.storyboard in Resources */,
 				7ED79F342B48153400149269 /* Assets.xcassets in Resources */,
+				7E0490AE2B4CBE72002D395B /* TabBarViewController.storyboard in Resources */,
 				7ED79F322B48153200149269 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +163,7 @@
 				7ED79F2F2B48153200149269 /* ViewController.swift in Sources */,
 				7ED79F2B2B48153200149269 /* AppDelegate.swift in Sources */,
 				7ED79F2D2B48153200149269 /* SceneDelegate.swift in Sources */,
+				7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */,
 				7ED79F402B48192900149269 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
