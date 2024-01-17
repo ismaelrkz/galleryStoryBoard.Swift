@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0490A82B4CBE22002D395B /* TabBarViewController.swift */; };
 		7E0490AE2B4CBE72002D395B /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */; };
-		7E3EA7342B4D8BBF00E287CA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7322B4D8BBF00E287CA /* CustomCollectionViewCell.swift */; };
 		7E3EA7382B4D8BD700E287CA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7362B4D8BD700E287CA /* CustomTableViewCell.swift */; };
 		7E3EA7392B4D8BD700E287CA /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA7372B4D8BD700E287CA /* CustomTableViewCell.xib */; };
 		7E3EA73C2B4D8BF800E287CA /* DataForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA73B2B4D8BF800E287CA /* DataForCell.swift */; };
 		7E3EA73F2B4D8C7200E287CA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA73E2B4D8C7200E287CA /* AlertController.swift */; };
-		7E3EA7412B4D8D3700E287CA /* CustomCollectionViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA7402B4D8D3700E287CA /* CustomCollectionViewCell.storyboard */; };
 		7E3EA7472B4D8F7400E287CA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7462B4D8F7400E287CA /* CollectionViewController.swift */; };
 		7E3EA7492B4D8F8600E287CA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7482B4D8F8600E287CA /* TableViewController.swift */; };
+		7E3EA74C2B4EE0B700E287CA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA74A2B4EE0B700E287CA /* CustomCollectionViewCell.swift */; };
+		7E3EA74D2B4EE0B700E287CA /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA74B2B4EE0B700E287CA /* CustomCollectionViewCell.xib */; };
 		7ED79F2B2B48153200149269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2A2B48153200149269 /* AppDelegate.swift */; };
 		7ED79F2D2B48153200149269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2C2B48153200149269 /* SceneDelegate.swift */; };
 		7ED79F2F2B48153200149269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED79F2E2B48153200149269 /* ViewController.swift */; };
@@ -30,14 +30,14 @@
 /* Begin PBXFileReference section */
 		7E0490A82B4CBE22002D395B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
-		7E3EA7322B4D8BBF00E287CA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E3EA7362B4D8BD700E287CA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7E3EA7372B4D8BD700E287CA /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		7E3EA73B2B4D8BF800E287CA /* DataForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForCell.swift; sourceTree = "<group>"; };
 		7E3EA73E2B4D8C7200E287CA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
-		7E3EA7402B4D8D3700E287CA /* CustomCollectionViewCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomCollectionViewCell.storyboard; sourceTree = "<group>"; };
 		7E3EA7462B4D8F7400E287CA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		7E3EA7482B4D8F8600E287CA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7E3EA74A2B4EE0B700E287CA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E3EA74B2B4EE0B700E287CA /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		7ED79F272B48153200149269 /* galleryStoryBoard_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galleryStoryBoard_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED79F2A2B48153200149269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ED79F2C2B48153200149269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		7E3EA7312B4D8B7B00E287CA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7E3EA7322B4D8BBF00E287CA /* CustomCollectionViewCell.swift */,
-				7E3EA7402B4D8D3700E287CA /* CustomCollectionViewCell.storyboard */,
+				7E3EA74A2B4EE0B700E287CA /* CustomCollectionViewCell.swift */,
+				7E3EA74B2B4EE0B700E287CA /* CustomCollectionViewCell.xib */,
 				7E3EA7362B4D8BD700E287CA /* CustomTableViewCell.swift */,
 				7E3EA7372B4D8BD700E287CA /* CustomTableViewCell.xib */,
 			);
@@ -195,11 +195,11 @@
 			files = (
 				7ED79F422B48193700149269 /* RegisterViewController.storyboard in Resources */,
 				7E3EA7392B4D8BD700E287CA /* CustomTableViewCell.xib in Resources */,
-				7E3EA7412B4D8D3700E287CA /* CustomCollectionViewCell.storyboard in Resources */,
 				7ED79F372B48153400149269 /* LaunchScreen.storyboard in Resources */,
 				7ED79F342B48153400149269 /* Assets.xcassets in Resources */,
 				7E0490AE2B4CBE72002D395B /* TabBarViewController.storyboard in Resources */,
 				7ED79F322B48153200149269 /* Main.storyboard in Resources */,
+				7E3EA74D2B4EE0B700E287CA /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,6 @@
 			files = (
 				7ED79F2F2B48153200149269 /* ViewController.swift in Sources */,
 				7E3EA73F2B4D8C7200E287CA /* AlertController.swift in Sources */,
-				7E3EA7342B4D8BBF00E287CA /* CustomCollectionViewCell.swift in Sources */,
 				7ED79F2B2B48153200149269 /* AppDelegate.swift in Sources */,
 				7E3EA7472B4D8F7400E287CA /* CollectionViewController.swift in Sources */,
 				7E3EA7382B4D8BD700E287CA /* CustomTableViewCell.swift in Sources */,
@@ -221,6 +220,7 @@
 				7E3EA73C2B4D8BF800E287CA /* DataForCell.swift in Sources */,
 				7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */,
 				7ED79F402B48192900149269 /* RegisterViewController.swift in Sources */,
+				7E3EA74C2B4EE0B700E287CA /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,9 +387,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "reckziegel.galleryStoryBoard-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -415,9 +418,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "reckziegel.galleryStoryBoard-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
