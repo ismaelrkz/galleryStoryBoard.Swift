@@ -31,22 +31,22 @@ class ViewController: UIViewController {
         
     }
     
-    #warning("Caminho TabBarController")
     @IBAction func tappedLoginButton(_ sender: UIButton) {
-
-        let view: TabBarViewController? = UIStoryboard(name: "TabBarViewController", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController
         
-        self.navigationController?.setViewControllers([view ?? UIViewController()], animated: true)
-        
-        validateTextFieldLogin()
+        if validateTextFieldLogin() {
+            
+            let view: TabBarViewController? = UIStoryboard(name: "TabBarViewController", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController
+            
+            self.navigationController?.setViewControllers([view ?? UIViewController()], animated: true)
+            
+        }
         
     }
     
-    #warning("Caminho RegisterViewController")
     @IBAction func tappedCreateAccountButton(_ sender: UIButton) {
-
-        let view: RegisterViewController? = UIStoryboard(name: "RegisterViewController", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
-
+        
+        let view: RegisterViewController? = UIStoryboard(name: "RegisterViewController", bundle: nil).instantiateViewController(identifier: "RegisterViewController") as? RegisterViewController
+        
         self.navigationController?.pushViewController(view ?? UIViewController(), animated: true)
         
     }
@@ -56,20 +56,18 @@ class ViewController: UIViewController {
         logoImageView.image = UIImage(named: "tortoise")
         firstInfoLabel.text = "Create an account ou Sign in"
         userTextField.placeholder = "User (e-mail)"
-        passwordTextField.placeholder = "Password"
-        loginButton.setTitle("Login", for: .normal)
-        createAccountButton.setTitle("Create an account", for: .normal)
-        createByLabel.text = "by Ismael Reckziegel"
-        
         userTextField.keyboardType = .emailAddress
+        passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
-        
         loginButton.tintColor = UIColor.black
         loginButton.backgroundColor = UIColor.systemGray5
         loginButton.layer.cornerRadius = 4
+        loginButton.setTitle("Login", for: .normal)
+        createAccountButton.setTitle("Create an account", for: .normal)
         createAccountButton.tintColor = UIColor.black
         createAccountButton.backgroundColor = UIColor.systemGray5
         createAccountButton.layer.cornerRadius = 4
+        createByLabel.text = "by Ismael Reckziegel"
         
         loginButton.isEnabled = false
         
@@ -81,8 +79,8 @@ class ViewController: UIViewController {
         passwordTextField.delegate = self
         
     }
-    
-    func validateTextFieldLogin() {
+
+    func validateTextFieldLogin() -> Bool {
         
         if userTextField.text != "" && passwordTextField.text != "" {
             
@@ -90,15 +88,21 @@ class ViewController: UIViewController {
                 
                 loginButton.isEnabled = true
                 
+                return true
+                
             } else {
                 
-                self.alert?.alertInformation(title: "Error", message: "Please, include a valid e-mail")
+                self.alert?.alertInformation(title: "Error", message: "Please include a valid e-mail!")
+                
+                return false
                 
             }
             
         } else {
             
             loginButton.isEnabled = false
+            
+            return false
             
         }
         
@@ -111,12 +115,10 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
         
-        
         return true
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        
         
         
         return true
@@ -132,9 +134,9 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        validateTextFieldLogin() //#3.3
-        
-        textField.layer.borderWidth = 0
+        let _ = validateTextFieldLogin()
+            
+            textField.layer.borderWidth = 0
         
     }
     
