@@ -7,13 +7,14 @@
 
 import UIKit
 
+
 class AlertController: NSObject {
     
     
     let controller: UIViewController
     
     init(controller: UIViewController) {
-     
+        
         self.controller = controller
         
     }
@@ -30,5 +31,35 @@ class AlertController: NSObject {
         
     }
     
+    enum Action {
+        
+        case yes
+        case no
+        
+    }
 
+    func alertConfirmation(completion: @escaping (_ option: Action) -> Void, title: String, message: String) {
+        
+        let alertController: UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let yes = UIAlertAction(title: "Yes", style: .default) { action in
+            
+            completion(.yes)
+            
+        }
+        
+        let no = UIAlertAction(title: "No", style: .cancel) { action in
+            
+            completion(.no)
+            
+        }
+        
+        alertController.addAction(yes)
+        alertController.addAction(no)
+        
+        controller.present(alertController, animated: true)
+        
+    }
+    
+    
 }

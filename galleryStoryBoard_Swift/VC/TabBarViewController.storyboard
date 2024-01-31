@@ -15,10 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="JZx-fd-P4m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNJ-0F-IRL">
+                                <rect key="frame" x="10" y="69" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYv-H9-EkO">
+                                <rect key="frame" x="10" y="113" width="75" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JHd-U7-JjX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedAddImageButton:" destination="Eqq-lA-O6D" eventType="touchUpInside" id="0qX-WM-T8D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-e6-s2j">
+                                <rect key="frame" x="333" y="113" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2CH-jv-KhW"/>
+                                    <constraint firstAttribute="width" constant="50" id="ODP-OB-iIP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedExitButton:" destination="Eqq-lA-O6D" eventType="touchUpInside" id="wnd-lP-4Ah"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eDE-3D-F5S">
+                                <rect key="frame" x="10" y="173" width="373" height="586"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VqF-eD-azG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VqF-eD-azG" firstAttribute="trailing" secondItem="mVy-e6-s2j" secondAttribute="trailing" constant="10" id="7xh-qW-h0m"/>
+                            <constraint firstItem="oNJ-0F-IRL" firstAttribute="leading" secondItem="VqF-eD-azG" secondAttribute="leading" constant="10" id="DFx-FY-CBD"/>
+                            <constraint firstItem="VqF-eD-azG" firstAttribute="trailing" secondItem="oNJ-0F-IRL" secondAttribute="trailing" constant="10" id="Fao-vK-4oX"/>
+                            <constraint firstItem="eDE-3D-F5S" firstAttribute="leading" secondItem="VqF-eD-azG" secondAttribute="leading" constant="10" id="GYU-nD-jil"/>
+                            <constraint firstItem="mVy-e6-s2j" firstAttribute="top" secondItem="oNJ-0F-IRL" secondAttribute="bottom" constant="10" id="LFJ-QX-3fP"/>
+                            <constraint firstItem="eDE-3D-F5S" firstAttribute="top" secondItem="mVy-e6-s2j" secondAttribute="bottom" constant="10" id="Pdt-YE-NEh"/>
+                            <constraint firstItem="bYv-H9-EkO" firstAttribute="top" secondItem="oNJ-0F-IRL" secondAttribute="bottom" constant="10" id="SS3-ZR-1d7"/>
+                            <constraint firstItem="VqF-eD-azG" firstAttribute="trailing" secondItem="eDE-3D-F5S" secondAttribute="trailing" constant="10" id="Vs8-fG-GX9"/>
+                            <constraint firstItem="VqF-eD-azG" firstAttribute="bottom" secondItem="eDE-3D-F5S" secondAttribute="bottom" constant="10" id="Yw9-if-KPd"/>
+                            <constraint firstItem="oNJ-0F-IRL" firstAttribute="top" secondItem="VqF-eD-azG" secondAttribute="top" constant="10" id="k7K-za-nzn"/>
+                            <constraint firstItem="bYv-H9-EkO" firstAttribute="leading" secondItem="VqF-eD-azG" secondAttribute="leading" constant="10" id="xqw-0D-TuD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="80e-Up-yKK"/>
+                    <connections>
+                        <outlet property="addImageButton" destination="bYv-H9-EkO" id="bMs-9g-Wk2"/>
+                        <outlet property="addTextTextField" destination="oNJ-0F-IRL" id="jUg-17-d8E"/>
+                        <outlet property="exitButton" destination="mVy-e6-s2j" id="xsJ-Or-ete"/>
+                        <outlet property="tableVIew" destination="eDE-3D-F5S" id="Kcb-Os-d4P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4AV-3y-3q3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,14 +84,65 @@
                     <view key="view" contentMode="scaleToFill" id="RYR-hE-gWs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-K1-V2W">
+                                <rect key="frame" x="10" y="69" width="75" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cmn-Ji-nLf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedAddImageButton:" destination="Y4A-IR-N70" eventType="touchUpInside" id="oUy-QN-b0x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-Zs-pI4">
+                                <rect key="frame" x="333" y="69" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AiJ-0L-A6s"/>
+                                    <constraint firstAttribute="width" constant="50" id="JK5-uC-MDo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedExitButton:" destination="Y4A-IR-N70" eventType="touchUpInside" id="c1Y-sb-Tvk"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N74-xf-aVJ">
+                                <rect key="frame" x="10" y="129" width="373" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdV-f2-GBj">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3hN-ZX-VgK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N74-xf-aVJ" firstAttribute="leading" secondItem="3hN-ZX-VgK" secondAttribute="leading" constant="10" id="39j-sd-mzc"/>
+                            <constraint firstItem="3hN-ZX-VgK" firstAttribute="bottom" secondItem="N74-xf-aVJ" secondAttribute="bottom" constant="10" id="Dtl-6G-yG1"/>
+                            <constraint firstItem="3hN-ZX-VgK" firstAttribute="trailing" secondItem="huq-Zs-pI4" secondAttribute="trailing" constant="10" id="GX7-Ld-zoA"/>
+                            <constraint firstItem="Z1h-K1-V2W" firstAttribute="leading" secondItem="3hN-ZX-VgK" secondAttribute="leading" constant="10" id="WTG-Ov-Fpe"/>
+                            <constraint firstItem="N74-xf-aVJ" firstAttribute="top" secondItem="Z1h-K1-V2W" secondAttribute="bottom" constant="10" id="X2u-tB-8ZC"/>
+                            <constraint firstItem="3hN-ZX-VgK" firstAttribute="trailing" secondItem="N74-xf-aVJ" secondAttribute="trailing" constant="10" id="uH3-ia-5gf"/>
+                            <constraint firstItem="huq-Zs-pI4" firstAttribute="top" secondItem="3hN-ZX-VgK" secondAttribute="top" constant="10" id="wxl-Ez-2N9"/>
+                            <constraint firstItem="Z1h-K1-V2W" firstAttribute="top" secondItem="3hN-ZX-VgK" secondAttribute="top" constant="10" id="yjf-Yg-QIp"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="3Kp-1P-h02"/>
+                    <connections>
+                        <outlet property="addImageButton" destination="Z1h-K1-V2W" id="h3J-Dh-Rdb"/>
+                        <outlet property="collectionView" destination="N74-xf-aVJ" id="deF-Ra-XLO"/>
+                        <outlet property="exitButton" destination="huq-Zs-pI4" id="9h0-u4-RrN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvE-JB-RSc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="-761"/>
+            <point key="canvasLocation" x="539.69465648854964" y="-761.26760563380287"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="bDj-Q8-IKj">
