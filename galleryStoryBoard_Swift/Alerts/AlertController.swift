@@ -61,5 +61,44 @@ class AlertController: NSObject {
         
     }
     
+    enum typeImageSelect {
+        
+        case camera
+        case library
+        case cancel
+        
+    }
+    
+    func chooseImage (completion: @escaping (_ option: typeImageSelect) -> Void) {
+        
+        let alertController: UIAlertController = UIAlertController(title: "Select one of the options below", message: nil, preferredStyle: .actionSheet)
+        
+        let camera = UIAlertAction(title: "Camera", style: .default) { action in
+            
+            completion(.camera)
+            
+        }
+        
+        let library = UIAlertAction(title: "Library", style: .default) { action in
+        
+            completion(.library)
+            
+        }
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { action in
+            
+            completion(.cancel)
+            
+        }
+        
+        alertController.addAction(camera)
+        alertController.addAction(library)
+        alertController.addAction(cancel)
+        
+        controller.present(alertController, animated: true)
+
+        
+    }
+    
     
 }

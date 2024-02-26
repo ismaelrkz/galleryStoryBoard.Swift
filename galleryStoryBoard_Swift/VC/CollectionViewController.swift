@@ -4,12 +4,16 @@
 //
 //  Created by Ismael Reckziegel on 09/01/24.
 //
-
+#warning("Salvar os Snippets necessários")
 import UIKit
 
 class CollectionViewController: UIViewController {
-
+    
     var alert: AlertController?
+    
+    let imagePicker: UIImagePickerController = UIImagePickerController()
+    
+    var dataCell: [imageForCell] = []
     
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var exitButton: UIButton!
@@ -19,6 +23,8 @@ class CollectionViewController: UIViewController {
         super.viewDidLoad()
         
         settingsUI()
+        settingsDelegateCollectionView()
+        settingsDelegateImagePicker()
         
         alert = AlertController(controller: self)
         
@@ -26,7 +32,29 @@ class CollectionViewController: UIViewController {
     
     @IBAction func tappedAddImageButton(_ sender: UIButton) {
         
-        // implementação do conteúdo das células
+        self.alert?.chooseImage(completion: { option in
+            
+            switch option {
+                
+            case .camera:
+                
+                self.imagePicker.sourceType = .camera
+                
+                self.present(self.imagePicker, animated: true)
+                
+            case .library:
+                
+                self.imagePicker.sourceType = .photoLibrary
+                
+                self.present(self.imagePicker, animated: true)
+                
+            case .cancel:
+                
+                break
+                
+            }
+            
+        })
         
     }
     
@@ -35,6 +63,7 @@ class CollectionViewController: UIViewController {
         alert?.alertConfirmation(completion: { option in
             
             switch option {
+            
             case .yes:
                 
                 let view: UIViewController? = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as? ViewController
@@ -65,6 +94,79 @@ class CollectionViewController: UIViewController {
         
     }
     
+    func settingsDelegateCollectionView() {
+        
+        collectionView.delegate = self
+        
+        collectionView.dataSource = self
+        
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            
+            layout.scrollDirection = .vertical
+            layout.estimatedItemSize = .zero
+            layout.minimumLineSpacing = 10
+            layout.minimumInteritemSpacing = 5
+            
+            let cellSize = (collectionView.bounds.width - (2 * layout.minimumInteritemSpacing)) / 2
+            layout.itemSize = CGSize(width: cellSize, height: cellSize)
+            
+        }
+        
+        collectionView.register(CustomCollectionViewCell.nib(), forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
+        
+    }
+    
+    func settingsDelegateImagePicker() {
+        
+        imagePicker.delegate = self
+        
+    }
+    
+    
 }
+
+extension CollectionViewController: UICollectionViewDelegate & UICollectionViewDataSource {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return dataCell.count
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cellCollection = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell
+        
+        cellCollection?.setupCell(image: dataCell[indexPath.row])
+        
+        return cellCollection ?? UICollectionViewCell()
+        
+    }
+    
+}
+
+extension CollectionViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
+            let newImage = imageForCell(imageModel: image)
+            
+            dataCell.append(newImage)
+            
+            collectionView.reloadData()
+            
+        }
+        
+        picker.dismiss(animated: true)
+        
+    }
+    
+}
+
+
 
 

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0490A82B4CBE22002D395B /* TabBarViewController.swift */; };
 		7E0490AE2B4CBE72002D395B /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */; };
+		7E3D7CF32B8688DE00A91EE8 /* imageForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D7CF22B8688DE00A91EE8 /* imageForCell.swift */; };
 		7E3EA7382B4D8BD700E287CA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7362B4D8BD700E287CA /* CustomTableViewCell.swift */; };
 		7E3EA7392B4D8BD700E287CA /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA7372B4D8BD700E287CA /* CustomTableViewCell.xib */; };
-		7E3EA73C2B4D8BF800E287CA /* DataForCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA73B2B4D8BF800E287CA /* DataForCell.swift */; };
 		7E3EA73F2B4D8C7200E287CA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA73E2B4D8C7200E287CA /* AlertController.swift */; };
 		7E3EA7472B4D8F7400E287CA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7462B4D8F7400E287CA /* CollectionViewController.swift */; };
 		7E3EA7492B4D8F8600E287CA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EA7482B4D8F8600E287CA /* TableViewController.swift */; };
@@ -30,9 +30,9 @@
 /* Begin PBXFileReference section */
 		7E0490A82B4CBE22002D395B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7E0490AD2B4CBE72002D395B /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		7E3D7CF22B8688DE00A91EE8 /* imageForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageForCell.swift; sourceTree = "<group>"; };
 		7E3EA7362B4D8BD700E287CA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7E3EA7372B4D8BD700E287CA /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		7E3EA73B2B4D8BF800E287CA /* DataForCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForCell.swift; sourceTree = "<group>"; };
 		7E3EA73E2B4D8C7200E287CA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		7E3EA7462B4D8F7400E287CA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		7E3EA7482B4D8F8600E287CA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		7E3EA73A2B4D8BE200E287CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7E3EA73B2B4D8BF800E287CA /* DataForCell.swift */,
+				7E3D7CF22B8688DE00A91EE8 /* imageForCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				7E3EA7382B4D8BD700E287CA /* CustomTableViewCell.swift in Sources */,
 				7E3EA7492B4D8F8600E287CA /* TableViewController.swift in Sources */,
 				7ED79F2D2B48153200149269 /* SceneDelegate.swift in Sources */,
-				7E3EA73C2B4D8BF800E287CA /* DataForCell.swift in Sources */,
+				7E3D7CF32B8688DE00A91EE8 /* imageForCell.swift in Sources */,
 				7E0490A92B4CBE22002D395B /* TabBarViewController.swift in Sources */,
 				7ED79F402B48192900149269 /* RegisterViewController.swift in Sources */,
 				7E3EA74C2B4EE0B700E287CA /* CustomCollectionViewCell.swift in Sources */,
