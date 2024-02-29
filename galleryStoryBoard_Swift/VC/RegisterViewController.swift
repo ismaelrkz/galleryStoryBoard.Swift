@@ -49,26 +49,37 @@ class RegisterViewController: UIViewController {
     func settingsUIRegisterAccount() {
         
         createAccountInformationLabel.text = "Create an account"
+        
         welcomeLabel.text = "Welcome"
         welcomeLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        
         accountUseInformationLabel.text = "This is the information we will use to create your account."
         accountUseInformationLabel.numberOfLines = 2
         accountUseInformationLabel.lineBreakMode = .byWordWrapping
+        
         firstNameTextField.placeholder = "First Name"
         firstNameTextField.autocapitalizationType = .words
+        
         lastNameTextField.placeholder = "Last Name"
         lastNameTextField.autocapitalizationType = .words
+        
         emailUserTexField.placeholder = "E-mail (use to login)"
+        
         securePasswordLabel.text = "Create a secure password!"
+        
         passwordTextField.placeholder = "Your password"
         passwordTextField.isSecureTextEntry = true
+        
         confirmPasswordTextField.placeholder = "Confirm your password"
         confirmPasswordTextField.isSecureTextEntry = true
+        
         createAccountButton.setTitle("Create an account", for: .normal)
         createAccountButton.tintColor = UIColor.black
         createAccountButton.backgroundColor = UIColor.systemGray5
         createAccountButton.layer.cornerRadius = 4
-        logoImageView.image = UIImage(named: "tortoise")
+        
+        logoImageView.image = UIImage(systemName: "swift")
+        logoImageView.tintColor = UIColor.black
         
         createAccountButton.isEnabled = false
         

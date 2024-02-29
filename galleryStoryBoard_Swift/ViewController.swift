@@ -53,20 +53,27 @@ class ViewController: UIViewController {
     
     func settingsUILogin() {
         
-        logoImageView.image = UIImage(named: "tortoise")
+        logoImageView.image = UIImage(systemName: "swift")
+        logoImageView.tintColor = UIColor.black
+        
         firstInfoLabel.text = "Create an account ou Sign in"
+        
         userTextField.placeholder = "User (e-mail)"
         userTextField.keyboardType = .emailAddress
+        
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
+        
         loginButton.tintColor = UIColor.black
         loginButton.backgroundColor = UIColor.systemGray5
         loginButton.layer.cornerRadius = 4
         loginButton.setTitle("Login", for: .normal)
+        
         createAccountButton.setTitle("Create an account", for: .normal)
         createAccountButton.tintColor = UIColor.black
         createAccountButton.backgroundColor = UIColor.systemGray5
         createAccountButton.layer.cornerRadius = 4
+        
         createByLabel.text = "by Ismael Reckziegel"
         
         loginButton.isEnabled = false

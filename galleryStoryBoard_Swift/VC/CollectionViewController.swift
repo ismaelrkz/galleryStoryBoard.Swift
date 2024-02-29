@@ -4,7 +4,7 @@
 //
 //  Created by Ismael Reckziegel on 09/01/24.
 //
-#warning("Salvar os Snippets necessários")
+
 import UIKit
 
 class CollectionViewController: UIViewController {

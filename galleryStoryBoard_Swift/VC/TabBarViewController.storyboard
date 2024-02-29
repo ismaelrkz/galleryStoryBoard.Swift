@@ -70,7 +70,7 @@
                         <outlet property="addImageButton" destination="bYv-H9-EkO" id="bMs-9g-Wk2"/>
                         <outlet property="addTextTextField" destination="oNJ-0F-IRL" id="jUg-17-d8E"/>
                         <outlet property="exitButton" destination="mVy-e6-s2j" id="xsJ-Or-ete"/>
-                        <outlet property="tableVIew" destination="eDE-3D-F5S" id="Kcb-Os-d4P"/>
+                        <outlet property="tableView" destination="eDE-3D-F5S" id="Kcb-Os-d4P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4AV-3y-3q3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

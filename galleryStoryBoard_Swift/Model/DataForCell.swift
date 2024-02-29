@@ -13,3 +13,10 @@ struct imageForCell {
     let imageModel: UIImage
     
 }
+
+struct dataForCell {
+    
+    let imageModel: UIImage
+    let labelModel: String
+    
+}
