@@ -18,6 +18,7 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
 
 - Swift
 - UIKit
+- Storyboard
 
 ## Estrutura do projeto
 
