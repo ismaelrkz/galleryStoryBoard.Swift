@@ -51,7 +51,7 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
     - **`chooseImage`**: Exibe um alerta de escolha para a fonte da imagem (câmera, biblioteca ou cancelar).
     - Uso do **`UIViewController`** para apresentar os alertas.
 
-### **`TabBarViewController`**:
+### **TabBarViewController**:
 
 1. **Responsabilidade:**
     - Gerencia a interface de abas.
@@ -60,7 +60,7 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
     - Conecta abas às visualizações correspondentes: **`CollectionView`** e **`TableView`**.
     - Uso do **`UITabBarController`** para a navegação entre as visualizações.
 
-### **`CustomCollectionViewCell`**:
+### **CustomCollectionViewCell**:
 
 1. **Responsabilidade:**
     - Representa uma célula personalizada para a **`CollectionView`**.
@@ -68,7 +68,7 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
     - **`settingsUICell`**: Configura a aparência visual da célula.
     - **`setupCell`**: Preenche a célula com dados do modelo **`imageForCell`**.
 
-### **`CollectionViewController`**:
+### **CollectionViewController**:
 
 1. **Responsabilidade:**
     - Gerencia a exibição de uma coleção de imagens.
@@ -78,12 +78,12 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
     - Implementação dos protocolos **`UICollectionViewDelegate`** e **`UICollectionViewDataSource`**.
     - Uso da classe **`AlertController`** para escolha de imagens.
 
-### **`imageForCell`** e **`dataForCell`**:
+### **imageForCell** e **dataForCell**:
 
 1. **Responsabilidade:**
     - Modelos de dados para representar imagens e dados associados.
 
-### **`CustomTableViewCell`**:
+### **CustomTableViewCell**:
 
 1. **Responsabilidade:**
     - Representa uma célula personalizada para a **`TableView`**.
@@ -91,7 +91,7 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
     - **`settingsUICell`**: Configura a aparência visual da célula.
     - **`setupCell`**: Preenche a célula com dados dos modelos **`dataForCell`**.
 
-### **`TableViewController`**:
+### **TableViewController**:
 
 1. **Responsabilidade:**
     - Gerencia a exibição de uma tabela de citações e imagens associadas.
