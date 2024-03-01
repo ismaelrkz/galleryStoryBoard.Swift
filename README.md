@@ -1,5 +1,3 @@
-em edicão...
-
 # Gallery StoryBoard 
 
 ## Sobre o projeto 
