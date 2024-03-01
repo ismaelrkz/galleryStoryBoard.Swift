@@ -7,14 +7,12 @@ No geral, o desenvolvimento da aplicação ajudou-me a adquirir habilidades prá
 
 ## Layout
 <p float="left">
-  <img src="galleryStoryBoard_Swift/Assets.layout/01.launchScreen.PNG" width="250" />
-  <img src="galleryStoryBoard_Swift/Assets.layout/02.login.PNG" width="250" />
-  <img src="galleryStoryBoard_Swift/Assets.layout/03.register.PNG" width="250" />
-</p>
+  <img src="Simulator Screenshot - iPhone 15 Pro - 2024-03-01 at 08.52.44.png" width="200" />
+  <img src="Simulator Screenshot - iPhone 15 Pro - 2024-03-01 at 08.52.54.png" width="200" />
+  <img src="Simulator Screenshot - iPhone 15 Pro - 2024-03-01 at 08.53.30.png" width="200" />
+  <img src="Simulator Screenshot - iPhone 15 Pro - 2024-03-01 at 08.57.09.png" width="200" />
 <p float="left">
-  <img src="galleryStoryBoard_Swift/Assets.layout/04.collectionView.PNG" width="250" />
-  <img src="galleryStoryBoard_Swift/Assets.layout/05.tableView.PNG" width="250" />
-</p>
+
 
 ## Tecnologias utilizadas
 
